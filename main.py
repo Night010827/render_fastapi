@@ -27,7 +27,7 @@ def omikuji():
     ]
     return {"result" : omikuji_list[random.randrange(8)]}
 
-#  ここから課題9-1のコード
+# ---- 課題9-1のコード ----
 @app.get("/index")
 def index():
     html_content = """
@@ -49,11 +49,11 @@ def index():
         </body>
     </html>
     """
-
     return HTMLResponse(content=html_content, status_code=200)
-    #9-2
-    @app.post("/present")
-    async def give_present(present: str):
+
+# ---- 課題9-2のコード（左端に揃える！） ----
+@app.post("/present")
+async def give_present(present: str):
     # お返しのバリエーションをリストにする
     return_gifts = ["お金", "車", "家", "トイレットペーパー"]
     # randomを使ってランダムにお返しを選ぶ
