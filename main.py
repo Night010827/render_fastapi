@@ -1,6 +1,6 @@
 from typing import Optional
 from fastapi import FastAPI
-from fastapi.responses import HTMLResponse  # 👈 これを追加
+from fastapi.responses import HTMLResponse  #これを追加
 import random
 
 app = FastAPI()
@@ -42,9 +42,10 @@ def index():
             </style>
         </head>
         <body>
-            <h1>ようこそ！私のホームページへ</h1>
-            <p>FastAPIを使ってHTMLを表示する課題に挑戦中です！</p>
-            <p>文字やデザインは好きなように書き換えることができます。</p>
+            <h1>ようこそ！24fi085のホームページへ</h1>
+            <p>FastAPIを使ってHTMLを表示する課題9-1です！</p>
+            <p>valorantというゲームを５年間ほどプレイしており、ランクはイモータル３に到達したことがあります！/p>
+            <p>サッカー観戦が趣味で今日から北中米W杯が始まってとても楽しみにしています</p>
         </body>
     </html>
     """
