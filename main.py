@@ -51,7 +51,7 @@ def index():
     """
     return HTMLResponse(content=html_content, status_code=200)
 
-# ---- 課題9-2のコード（左端に揃える！） ----
+# ---- 課題9-2のコード ----
 @app.post("/present")
 async def give_present(present: str):
     # お返しのバリエーションをリストにする
